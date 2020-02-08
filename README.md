@@ -9,11 +9,15 @@ Create records keyed by `project` that are indexed and searchable using [Postgre
 
 ### Usage
 
+##### Fields
+
 |Field|Description|
 |-----|-----------|
 |`data`|Records are searched on the `data` field. Can be any data type (`number`, `string`, `array`, `object`)|
 |`meta`|Provided for any relevant information needed to associate with a discovered record. Can be any data type (`number`, `string`, `array`, `object`)|
 |`project`|Project `string`, used to organize searchable data into buckets. This is also the partition key for Postgres.|
+
+##### cURL Commands
 
 ```sh
 # create some data for a project called 'test'
